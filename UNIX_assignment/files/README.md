@@ -103,3 +103,12 @@ awk -F'\t' '$2~/^unknown/|| $3~/^unknown/' maize.all.txt > maize_unknown.tmp
 ```
 
 11. Add headers to all the `.tmp` files in step 9 and step 10, as showed in step 8.
+
+"SPECIES" below indicates maize or teosinte, in each folder in `EEOB546X_assignment/UNIX_assignment/files/SPECIES`
+
+Now, all the `SPECIES_chrX.txt` are 10 files (1 for each chromosome) with SNPs ordered based on increasing position values and with missing data encoded by this symbol: ?;
+
+All the `SPECIES_chrX_reversed.txt` are 10 files (1 for each chromosome) with SNPs ordered based on decreasing position values and with missing data encoded by this symbol: -;
+
+All the `SPECIES_multiple.txt` and `SPECIES_unknown.txt`are 1 file with all SNPs with multiple positions in the genome and 1 file with all SNPs with unknown positions in the genome .
+
